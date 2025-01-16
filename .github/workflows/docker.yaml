@@ -1,0 +1,13 @@
+name: composer test
+
+on:
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: docker build -t $GITHUB_REPOSITORY:$GITHUB_SHA .
+      - name: Run composer test
+        run: docker run $GITHUB_REPOSITORY:$GITHUB_SHA composer test
