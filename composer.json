@@ -1,0 +1,27 @@
+{
+  "autoload": {
+    "files": [
+      "aliases.php"
+    ]
+  },
+  "description": "Optional (like in Java Platform SE 8 but in PHP)",
+  "keywords": [
+    "datatype",
+    "optional",
+    "type"
+  ],
+  "name": "optional/optional",
+  "require": {
+    "php": ">=8.1",
+    "petrknap/optional": "^3.0"
+  },
+  "require-dev": {
+    "petrknap/shorts": "^3.0",
+    "phpunit/phpunit": "^10.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit tests"
+  },
+  "homepage": "https://github.com/petrknap/php-optional-alias",
+  "license": "LGPL-3.0-or-later"
+}

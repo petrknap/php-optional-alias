@@ -1,0 +1,6 @@
+composer-alias php-optional
+dockerfile php 8.1-cli
+docker-scripts petrknap/php-optional-alias
+github-workflow docker "composer test"
+github-workflow linter-docker
+github-workflow linter-php 8.1
